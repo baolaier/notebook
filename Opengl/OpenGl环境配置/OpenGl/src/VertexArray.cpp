@@ -13,7 +13,8 @@ VertexArray::~VertexArray()
 void VertexArray::AddBuffer(const VertexBuffer& vb, const VertexBufferLayout& layout)
 {
 	vb.Bind();
-	const auto&
-	GLCall(glEnableVertexAttribArray(0));
+	
+	GLCall(glEnableVertexAttribArray(0
+	));
 
 }
