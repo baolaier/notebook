@@ -1,17 +1,2 @@
 ﻿  Application.cpp
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(12,22): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,37): warning C4244: “参数”: 从“const _Ty”转换到“GLint”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,37): warning C4244:         with
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,37): warning C4244:         [
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,37): warning C4244:             _Ty=double
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,37): warning C4244:         ]
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,27): warning C4244: “参数”: 从“const _Ty”转换到“GLint”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,27): warning C4244:         with
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,27): warning C4244:         [
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,27): warning C4244:             _Ty=double
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(40,27): warning C4244:         ]
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(49,25): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(49,21): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(50,26): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\学习笔记\Opengl\OpenGl环境配置\OpenGl\src\Application.cpp(50,22): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
   OpenGl.vcxproj -> D:\学习笔记\Opengl\OpenGl环境配置\Debug\OpenGl.exe

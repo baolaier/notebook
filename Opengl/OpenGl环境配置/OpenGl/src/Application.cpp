@@ -1,86 +1,59 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#define _USE_MATH_DEFINES
-#include <cmath>
-#include <vector>
 #include <iostream>
-#include "vec.h"
-using namespace std;
 
-void drawPixels(vector<vector<double>> points, double step) {
-    glClear(GL_COLOR_BUFFER_BIT); // 清除颜色缓冲区
-    glPointSize(step * 330.0f); // 设置点的大小
-    glBegin(GL_POINTS); // 开始绘制点
+int main(void)
+{
+    GLFWwindow* window;
 
-
-    // 遍历并绘制每个点
-    for (const auto& point : points) {
-        cout << point[0] << "," << point[1] << "," << point[2] << endl;
-        if (point[2] > 600) {
-            glColor3f(0.9f, 1.0f, 0.9f); // 设置颜色为粉色
-        }
-        else if (point[2] > 300)
-        {
-            glColor3f(0.6f, 1.0f, 0.6f); // 设置颜色为红色
-        }
-        else if (point[2] > -100) {
-            glColor3f(0.3f, 1.0f, 0.3f); // 设置颜色为绿色
-        }
-        else if (point[2] > -400)
-        {
-            glColor3f(0.0f, 0.9f, 0.0f);
-        }
-        else if (point[2] < -800)
-        {
-            glColor3f(0.0f, 0.7f, 0.0f);
-        }
-        else {
-            glColor3f(0.0f, 0.6f, 0.0f); // 设置颜色为白色
-        }
-        glVertex2i(point[0], point[1]); // 绘制点
-    }
-
-    glEnd(); // 结束绘制
-}
-int main() {
-
-    double L = 8.75 * 0.254;
-    double M = 8.75 * 0.254;
-    const int WIDTH = L * 300;
-    const int HEIGHT = M * 300;
-    double step = L/499;
-
-    // 初始化 GLFW
-    if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW" << std::endl;
+    /* Initialize the library */
+    if (!glfwInit())
         return -1;
-    }
 
-    // 创建窗口
-    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Pixel Drawing with Color Condition", NULL, NULL);
-    if (!window) {
-        std::cerr << "Failed to create GLFW window" << std::endl;
+    /* Create a windowed mode window and its OpenGL context */
+    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!window)
+    {
         glfwTerminate();
         return -1;
     }
 
+    /* Make the window's context current */
+
     glfwMakeContextCurrent(window);
+    if (glewInit() != GLEW_OK)
+        std::cout << "ERROR!" << std::endl;
 
-    // 初始化 GLEW
-    if (glewInit() != GLEW_OK) {
-        std::cerr << "Failed to initialize GLEW" << std::endl;
-        return -1;
-    }
+    float vertices[6] =
+    {
+        -0.5f, 0.0,
+        0.5f, 0.0f,
+        0.0f, 1.0f
+    };
 
-    // 设置坐标系统
-    glOrtho(0, WIDTH, 0, HEIGHT, -1, 1); // 设置正交投影
+    unsigned int VBO;
+    glGenBuffers(1, &VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 6, vertices, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);//启用通用顶点属性数组，其中0为对象索引
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);//定义通用顶点属性数据的数组
 
-    while (!glfwWindowShouldClose(window)) {
-        drawPixels(points, step); // 绘制像素
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window))
+    {
+        
+        /* Render here */
+        glClear(GL_COLOR_BUFFER_BIT);
+        glDrawArrays(GL_TRIANGLES,0, 3);
+        
 
+        /* Swap front and back buffers */
         glfwSwapBuffers(window);
+
+        /* Poll for and process events */
         glfwPollEvents();
     }
+
     glfwTerminate();
     return 0;
 }
