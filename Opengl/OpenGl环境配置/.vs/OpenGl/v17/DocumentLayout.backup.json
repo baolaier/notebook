@@ -7,6 +7,17 @@
       "RelativeMoniker": "D:0:0:{E8DA6CC3-C7E2-447F-A3ED-98174E71533D}|OpenGl\\OpenGl.vcxproj|solutionrelative:OpenGl\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6CC3-C7E2-447F-A3ED-98174E71533D}|OpenGl\\OpenGl.vcxproj|D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8DA6CC3-C7E2-447F-A3ED-98174E71533D}|OpenGl\\OpenGl.vcxproj|solutionrelative:OpenGl\\src\\shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6CC3-C7E2-447F-A3ED-98174E71533D}|OpenGl\\OpenGl.vcxproj|D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\res\\shader\\Basic.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{E8DA6CC3-C7E2-447F-A3ED-98174E71533D}|OpenGl\\OpenGl.vcxproj|solutionrelative:OpenGl\\res\\shader\\Basic.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\Depend\\GLEW\\include\\GL\\glew.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Depend\\GLEW\\include\\GL\\glew.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -17,9 +28,27 @@
       "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 5,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 25,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -27,12 +56,48 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Microsoft.CppCommon.targets",
+              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets",
+              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.CppCommon.targets",
+              "ViewState": "AgIAAN0CAAAAAAAAAAA3wPICAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-10-01T07:29:43.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shader.h",
+              "DocumentMoniker": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\shader.h",
+              "RelativeDocumentMoniker": "OpenGl\\src\\shader.h",
+              "ToolTip": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\shader.h",
+              "RelativeToolTip": "OpenGl\\src\\shader.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-29T07:51:53.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Basic.shader",
+              "DocumentMoniker": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\res\\shader\\Basic.shader",
+              "RelativeDocumentMoniker": "OpenGl\\res\\shader\\Basic.shader",
+              "ToolTip": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\res\\shader\\Basic.shader",
+              "RelativeToolTip": "OpenGl\\res\\shader\\Basic.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-29T07:28:05.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "glew.h",
               "DocumentMoniker": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\Depend\\GLEW\\include\\GL\\glew.h",
               "RelativeDocumentMoniker": "Depend\\GLEW\\include\\GL\\glew.h",
               "ToolTip": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\Depend\\GLEW\\include\\GL\\glew.h",
               "RelativeToolTip": "Depend\\GLEW\\include\\GL\\glew.h",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAxwHoBAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAPoEAAAAAAAAAIAzwAsFAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-07T14:30:10.618Z"
             },
@@ -42,9 +107,9 @@
               "Title": "Application.cpp",
               "DocumentMoniker": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\Application.cpp",
               "RelativeDocumentMoniker": "OpenGl\\src\\Application.cpp",
-              "ToolTip": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\Application.cpp*",
-              "RelativeToolTip": "OpenGl\\src\\Application.cpp*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\\u5B66\u4E60\u7B14\u8BB0\\Opengl\\OpenGl\u73AF\u5883\u914D\u7F6E\\OpenGl\\src\\Application.cpp",
+              "RelativeToolTip": "OpenGl\\src\\Application.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-30T14:39:04.11Z",
               "EditorCaption": ""

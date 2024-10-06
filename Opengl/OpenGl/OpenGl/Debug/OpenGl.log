@@ -1,0 +1,2 @@
+﻿  Application.cpp
+D:\学习笔记\Opengl\OpenGl\OpenGl\src\Application.cpp(44,29): error C2065: “argv”: 未声明的标识符

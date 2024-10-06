@@ -1,0 +1,2 @@
+﻿D:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(755,5): error : 元素 <RuntimeLibrary> 具有无效值“<不同选项>”。
+D:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(755,5): error MSB6011: 传递给 Microsoft.Build.CPPTasks.CL 任务的参数无效。

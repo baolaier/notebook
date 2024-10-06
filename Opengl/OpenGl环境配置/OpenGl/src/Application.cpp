@@ -1,59 +1,73 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <vector>
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
 
-int main(void)
-{
-    GLFWwindow* window;
+void render() {
+    glClear(GL_COLOR_BUFFER_BIT);
 
-    /* Initialize the library */
-    if (!glfwInit())
+    glBegin(GL_TRIANGLES);
+    glColor3f(1.0, 0.0, 0.0);   // 红色
+    glVertex2f(-0.5, -0.5);
+
+    glColor3f(0.0, 1.0, 0.0);   // 绿色
+    glVertex2f(0.5, -0.5);
+
+    glColor3f(0.0, 0.0, 1.0);   // 蓝色
+    glVertex2f(0.0, 0.5);
+    glEnd();
+
+    glFlush();
+}
+
+void saveImage(const char* filename, int width, int height) {
+    std::vector<unsigned char> pixels(width * height * 3);
+    glReadPixels(0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.data());
+
+    stbi_flip_vertically_on_write(1); // 翻转图像
+
+    stbi_write_png(filename, width, height, 3, pixels.data(), width * 3);
+}
+
+int main() {
+    // 初始化 GLFW
+    if (!glfwInit()) {
+        std::cerr << "Failed to initialize GLFW" << std::endl;
         return -1;
+    }
 
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window)
-    {
+    // 创建窗口
+    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Example", NULL, NULL);
+    if (!window) {
         glfwTerminate();
         return -1;
     }
 
-    /* Make the window's context current */
-
     glfwMakeContextCurrent(window);
-    if (glewInit() != GLEW_OK)
-        std::cout << "ERROR!" << std::endl;
 
-    float vertices[6] =
-    {
-        -0.5f, 0.0,
-        0.5f, 0.0f,
-        0.0f, 1.0f
-    };
+    // 初始化 GLEW
+    if (glewInit() != GLEW_OK) {
+        std::cerr << "Failed to initialize GLEW" << std::endl;
+        return -1;
+    }
 
-    unsigned int VBO;
-    glGenBuffers(1, &VBO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 6, vertices, GL_STATIC_DRAW);
-    glEnableVertexAttribArray(0);//启用通用顶点属性数组，其中0为对象索引
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);//定义通用顶点属性数据的数组
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
-    {
-        
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-        glDrawArrays(GL_TRIANGLES,0, 3);
-        
+    while (!glfwWindowShouldClose(window)) {
+        render();
 
-        /* Swap front and back buffers */
+        // 保存渲染结果为图片
+        saveImage("output.png", 800, 600);
+
         glfwSwapBuffers(window);
-
-        /* Poll for and process events */
         glfwPollEvents();
     }
 
     glfwTerminate();
+
     return 0;
 }
